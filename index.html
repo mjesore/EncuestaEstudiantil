@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuesta Estudiantil</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Encuesta para Estdiantes</h1>
+        <form class="formulario-encuesta">
+            <!--DATOS PERSONALES-->
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div class="grupo-campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required />
+                </div>
+                <div class="grupo-campo">
+                    <label for="apellido-paterno">Apellido Paterno:</label>
+                    <input type="text" id="apellido-paterno" name="apellido-paterno" required />
+                </div>
+                <div class="grupo-campo">
+                    <label for="apellido-materno">Apellido Materno:</label>
+                    <input type="text" id="apellido-materno" name="apellido-materno" required />
+                </div>
+                <div class="grupo-campo">
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="10" max="100" required />
+                </div>
+                <div class="grupo-campo">
+                    <label for="genero">Género:</label>
+                    <label><input type="radio" name="genero" value="Masculino" required />Masculino</label>
+                    <label><input type="radio" name="genero" value="Femenino" required />Femenino</label>
+                    <label><input type="radio" name="genero" value="Otro" required />Otro</label>
+                </div>
+            </fieldset>
+
+            <!--SELECCIÓN ÚNICA-->
+             <fieldset> 
+                <legend>Nivel de Estudios</legend> 
+                <div class="grupo-campo"> 
+                <select name="nivel-estudios" required> 
+                    <option value="">Seleccione una opción</option> 
+                    <option value="Secundaria">Secundaria</option> 
+                    <option value="Preparatoria">Preparatoria</option> 
+                    <option value="Universidad">Universidad</option> 
+                    <option value="Posgrado">Posgrado</option> 
+                </select> 
+                </div> 
+            </fieldset>
+
+             <!-- SELECCIÓN MÚLTIPLE --> 
+            <fieldset> 
+                <legend>Materias o Áreas de Interés</legend> 
+                <div class="grupo-casillas">                     
+                    <label><input type="checkbox" name="intereses" value="Matemáticas" /> Matemáticas</label> 
+                    <label><input type="checkbox" name="intereses" value="Ciencias" /> Ciencias</label> 
+                    <label><input type="checkbox" name="intereses" value="Arte" /> Arte</label> 
+                    <label><input type="checkbox" name="intereses" value="Tecnología" /> Tecnología</label> 
+                    <label><input type="checkbox" name="intereses" value="Idiomas" /> Idiomas</label> 
+                </div> 
+            </fieldset>
+
+            <!-- BOTÓN DE ENVÍO --> 
+            <div class="grupo-campo"> 
+                <button type="submit">Enviar Encuesta</button> 
+            </div>
+        </form>
+    </div>
+</body>
+</html>

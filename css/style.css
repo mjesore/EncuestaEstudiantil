@@ -1,0 +1,95 @@
+:root { 
+    --color-fondo: #f8f9fa; 
+    --color-principal: #4b6584; 
+    --color-acento: #a5b1c2; 
+    --color-campo: #ffffff; 
+    --color-borde: #dcdde1; 
+}
+
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    background-color: var(--color-fondo); 
+    margin: 0; 
+    padding: 2rem; 
+    color: var(--color-principal); 
+} 
+ 
+.contenedor {
+    max-width: 700px; 
+    margin: auto; 
+    background: #fff; 
+    padding: 2rem; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+
+h1 { 
+    text-align: center; 
+    margin-bottom: 1.5rem; 
+    color: var(--color-principal); 
+} 
+
+.formulario-encuesta { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.5rem; 
+}
+
+fieldset { 
+    border: 1px solid var(--color-borde); 
+    border-radius: 10px; 
+    padding: 1rem; 
+} 
+
+legend { 
+    font-weight: bold; 
+    padding: 0 10px; 
+} 
+
+.grupo-campo { 
+    display: flex; 
+    flex-direction: column; 
+    margin-bottom: 1rem; 
+} 
+
+.grupo-campo label { 
+    margin-bottom: 5px; 
+    font-weight: 500; 
+} 
+
+input[type="text"], 
+input[type="number"], 
+select { 
+    padding: 0.5rem; 
+    border: 1px solid var(--color-borde); 
+    border-radius: 5px; 
+    background-color: var(--color-campo); 
+    font-size: 1rem; 
+} 
+
+.grupo-casillas { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+    gap: 10px; 
+} 
+
+input[type="radio"], 
+input[type="checkbox"] { 
+    margin-right: 8px; 
+} 
+
+button[type="submit"] { 
+    background-color: var(--color-principal); 
+    color: white; 
+    border: none; 
+    padding: 0.8rem 1.2rem; 
+    font-size: 1rem; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+} 
+
+button[type="submit"]:hover { 
+    background-color: #2d98da; 
+}
+
